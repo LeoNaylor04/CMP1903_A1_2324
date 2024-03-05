@@ -48,5 +48,6 @@ namespace CMP1903_A1_2324
             int total = Return_Total(amount);
             return total;
         }
+        //extra comment
     }
 }

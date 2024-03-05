@@ -19,6 +19,6 @@ namespace CMP1903_A1_2324
             Random rnd = new Random();
             return rnd.Next(1, 7);
         }
-
+        //extra comment
     }
 }

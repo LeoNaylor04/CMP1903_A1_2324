@@ -14,10 +14,19 @@ namespace CMP1903_A1_2324
          */
 
         //Property
-
+        private int D_Value = 0;
+        public int value
+        {
+            get { return D_Value; }
+            set { D_Value = value; }
+        }
 
         //Method
-
+        public int Roll()
+        {
+            Random rnd = new Random();
+            return rnd.Next(1, 7);
+        }
 
     }
 }

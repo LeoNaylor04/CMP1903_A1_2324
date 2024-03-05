@@ -16,5 +16,13 @@ namespace CMP1903_A1_2324
          */
 
         //Method
+        public void Game_Test(Game my_game)
+        {
+
+        }
+        public void Die_Test(Die my_die)
+        {
+
+        }
     }
 }

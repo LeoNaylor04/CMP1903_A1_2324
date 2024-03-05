@@ -15,7 +15,7 @@ namespace CMP1903_A1_2324
             die.value = die.Roll();
             return die.value;
         }
-        private int Return_Total(int num_of_dice) //sums the value of all dice rolls and returns the total. 
+        public int Return_Total(int num_of_dice) //sums the value of all dice rolls and returns the total. 
         {
             int total = 0;
             for ( int i = 0; i < num_of_dice; i++)
@@ -42,12 +42,11 @@ namespace CMP1903_A1_2324
                 }
             }
         }
-        public int Run_Game() //runs all other game methods in correct order
+        public int Run_Game() //runs all other game class methods in correct order
         {
             int amount = Enter_Die();
             int total = Return_Total(amount);
             return total;
         }
-        //extra comment
     }
 }

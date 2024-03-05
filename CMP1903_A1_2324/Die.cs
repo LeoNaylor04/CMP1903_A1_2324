@@ -14,15 +14,15 @@ namespace CMP1903_A1_2324
          */
 
         //Property
-        private int D_Value = 0;
-        public int value
+        private int D_Value = 0; // encapsulated die value
+        public int value // die value able to be used by rest of program, modifying the encapsulatd value
         {
             get { return D_Value; }
             set { D_Value = value; }
         }
 
         //Method
-        public int Roll()
+        public int Roll() // returns random number between 1 and 6 inclusive
         {
             Random rnd = new Random();
             return rnd.Next(1, 7);

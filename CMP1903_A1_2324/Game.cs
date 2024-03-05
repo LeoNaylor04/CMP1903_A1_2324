@@ -9,21 +9,13 @@ namespace CMP1903_A1_2324
 {
     internal class Game
     {
-        /*
-         * The Game class should create three die objects, roll them, sum and report the total of the three dice rolls.
-         *
-         * EXTRA: For extra requirements (these aren't required though), the dice rolls could be managed so that the
-         * rolls could be continous, and the totals and other statistics could be summarised for example.
-         */
-
-        //Methods
         private dynamic Roll_Dice() //creates a new die object and rolls it returning the value of the roll.
         {
             Die die = new Die();
             die.value = die.Roll();
             return die.value;
         }
-        private int Return_Total(int num_of_dice) //sums the value of all dice rolls and returns the total. 
+        public int Return_Total(int num_of_dice) //sums the value of all dice rolls and returns the total. 
         {
             int total = 0;
             for ( int i = 0; i < num_of_dice; i++)
@@ -50,7 +42,7 @@ namespace CMP1903_A1_2324
                 }
             }
         }
-        public int Run_Game() //runs all other game methods in correct order
+        public int Run_Game() //runs all other game class methods in correct order
         {
             int amount = Enter_Die();
             int total = Return_Total(amount);

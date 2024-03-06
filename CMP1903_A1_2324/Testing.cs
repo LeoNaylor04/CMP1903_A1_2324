@@ -9,18 +9,18 @@ namespace CMP1903_A1_2324
 {
     internal class Testing
     {
-        public void Game_Test(Game my_game) // Tests the output for the return total game class method for function
+        public void GameTest(Game myGame) // Tests the output for the return total game class method for function
         {
-            Debug.Assert(my_game != null);
+            Debug.Assert(myGame != null);
             int n = 5;
-            Debug.Assert(my_game.Return_Total(n)<=6*n && my_game.Return_Total(n)>=n);
+            Debug.Assert(myGame.ReturnTotal(n)<=6*n && myGame.ReturnTotal(n)>=n);
         }
-        public void Die_Test(Die my_die) // Tests the Die roll function and makes sure the object properties are stored properly
+        public void DieTest(Die myDie) // Tests the Die roll function and makes sure the object properties are stored properly
         {
-            Debug.Assert(my_die != null);
-            Debug.Assert(my_die.Roll()>=1 && my_die.Roll()<=6);
-            my_die.value=my_die.Roll();
-            Debug.Assert(my_die.value <= 6 && my_die.value >= 1);
+            Debug.Assert(myDie != null);
+            Debug.Assert(myDie.Roll()>=1 && myDie.Roll()<=6);
+            myDie.value=myDie.Roll();
+            Debug.Assert(myDie.value <= 6 && myDie.value >= 1);
         }
     }
 }

@@ -10,12 +10,12 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {
-            Game new_game = new Game(); // creates a game object
-            Console.WriteLine(new_game.Run_Game()); // runs all methods in the game class throught the run_game method
-            Testing my_tests = new Testing();
-            my_tests.Game_Test(new_game);
-            Die testing_die = new Die();
-            my_tests.Die_Test(testing_die);
+            Game newGame = new Game(); // creates a game object
+            Console.WriteLine(newGame.RunGame()); // runs all methods in the game class throught the run_game method
+            Testing myTests = new Testing(); // creates a testing object for testing the game and die objects
+            myTests.GameTest(newGame); // tests the game object
+            Die testingDie = new Die(); // creates a die object for testing
+            myTests.DieTest(testingDie); // tests the die object
         }
     }
 }
